@@ -36,4 +36,5 @@ If shotgun is already running kill it by first:
  	- XXXX should be replaced with the digits preceding the filepath
 
  If postgres server is not running you can copy the line below and enter it in your terminal
+ 	
  	pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start
