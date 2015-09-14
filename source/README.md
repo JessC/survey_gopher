@@ -11,9 +11,10 @@ The rest of the app was fairly straight forward. The only thing I didn't work on
 HOW TO RUN
 
 To run this on your local server you should have shotgun installed:
+
 1. $ install shotgun
 
-2. Navigate to the survey_gopher/source file in the terminal
+2. Navigate to the survey_gopher/source file in the terminal:
 	* $ bundle install
 	*	$ be rake db:create
 	* $ be rake db:migrate
@@ -26,3 +27,13 @@ To run this on your local server you should have shotgun installed:
 Note:
 You must register a username and password. There is no acknowledgement as long as it's successful.
 Then you can use it to log in. There are no validations so use whatever you want.
+
+Problems running server?
+
+If shotgun is already running kill it by first:
+ * $ ps ax | grep shotgun
+ * $ kill -9 XXXX
+ 	- XXXX should be replaced with the digits preceding the filepath
+
+ If postgres server is not running you can copy the line below and enter it in your terminal
+ 	pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start
