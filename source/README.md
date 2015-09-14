@@ -10,13 +10,17 @@ The rest of the app was fairly straight forward. The only thing I didn't work on
 
 HOW TO RUN
 
+You can go to http://surveygopher.herokuapp.com/
+
+or
+
 To run this on your local server you should have shotgun installed:
 
 1. $ install shotgun
 
 2. Navigate to the survey_gopher/source file in the terminal:
 	* $ bundle install
-	*	$ be rake db:create
+	* $ be rake db:create
 	* $ be rake db:migrate
 
 3. Start the shotgun server:
